@@ -11,7 +11,7 @@ set(SRC_DIR ${HAL_DIR}/Src)
 # Set include directories and sources
 set(INCLUDE_DIRS 
     ${HAL_DIR}/Inc
-    ${HAL_DIR}/Inc/legacy
+    ${HAL_DIR}/Inc/Legacy
     ${CMAKE_CURRENT_SOURCE_DIR}/conf
     ${CMAKE_CURRENT_SOURCE_DIR}/cmsis
     ${CMAKE_CURRENT_SOURCE_DIR}/cmsis/device
