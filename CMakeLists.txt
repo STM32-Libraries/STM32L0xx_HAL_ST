@@ -13,6 +13,7 @@ set(INCLUDE_DIRS
     ${HAL_DIR}/Inc
     ${HAL_DIR}/Inc/legacy
     ${CMAKE_CURRENT_SOURCE_DIR}/conf
+    ${CMAKE_CURRENT_SOURCE_DIR}/cmsis
     ${CMAKE_CURRENT_SOURCE_DIR}/cmsis/device
     ${CMAKE_CURRENT_SOURCE_DIR}/cmsis/core
 )
