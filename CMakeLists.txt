@@ -98,7 +98,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDE_DIRS})
 # Configure additional compilation options, if needed
 target_compile_options(${PROJECT_NAME} PRIVATE 
                                         -c 
-                                        -mcpu=cortex-m4
+                                        -mcpu=cortex-m0plus
                                         -std=c11 
                                         -Wall
                                         -mthumb
