@@ -12,8 +12,9 @@ set(SRC_DIR ${HAL_DIR}/Src)
 set(INCLUDE_DIRS 
     ${HAL_DIR}/Inc
     ${HAL_DIR}/Inc/legacy
-    ${CMAKE_CURRENT_SOURCE_DIR}/cmsis/device
-    ${CMAKE_CURRENT_SOURCE_DIR}/cmsis/core
+    # ${CMAKE_CURRENT_SOURCE_DIR}/core
+    ${CMAKE_CURRENT_SOURCE_DIR}/CMSIS_6/CMSIS/Core/Include
+    ${CMAKE_CURRENT_SOURCE_DIR}/cmsis-device-l0/Include
 )
 
 set(SOURCES
@@ -102,6 +103,9 @@ target_compile_options(${PROJECT_NAME} PRIVATE
                                         -Wall
                                         -mthumb
                                         )
+
+# Define target macros
+target_compile_definitions(${PROJECT_NAME} PUBLIC STM32L031xx)
 
 # Configure linking options, if needed
 # target_link_libraries(${PROJECT_NAME} ...)
