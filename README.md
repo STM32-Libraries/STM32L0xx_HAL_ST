@@ -22,7 +22,7 @@ It is designed to simplify integration into modern bare-metal embedded projects 
 
 ## 📁 Project Structure
 
-### Clone repo
+## Clone repo
 ```
 git clone --recurse-submodules git@github.com:STM32-Libraries/STM32L0xx_HAL_ST.git 
 ```
@@ -34,4 +34,19 @@ git clone --recurse-submodules git@github.com:STM32-Libraries/STM32L0xx_HAL_ST.g
 ---
 
 ## 🚀 Building the HAL Library
+
+---
+
+## 📜 License
+This project is distributed under the BSD 3-Clause License, the same license used by STMicroelectronics for their HAL drivers.
+
+---
+## 🤝 Contributing
+Contributions are welcome! You can:
+
+Report issues
+
+Suggest improvements
+
+Submit pull requests (e.g., new features, bug fixes, CMake enhancements)
 
