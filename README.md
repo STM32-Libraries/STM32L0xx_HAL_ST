@@ -1,7 +1,7 @@
 # STM32L0xx_HAL_ST
 
 [![Latest Release](https://img.shields.io/github/v/release/STM32-Libraries/STM32L0xx_HAL_ST?label=latest)](https://github.com/STM32-Libraries/STM32L0xx_HAL_ST/releases/latest)
-[![License](https://img.shields.io/github/license/STM32-Libraries/STM32L0xx_HAL_ST)](https://github.com/STM32-Libraries/STM32L0xx_HAL_ST/LICENSE)
+[![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![Last Commit](https://img.shields.io/github/last-commit/STM32-Libraries/STM32L0xx_HAL_ST)](https://github.com/STM32-Libraries/STM32L0xx_HAL_ST/commits/main)
 
 CMake-ready version of the STM32 HAL driver for STM32L0 series microcontrollers.
