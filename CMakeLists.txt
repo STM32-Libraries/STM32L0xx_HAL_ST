@@ -12,9 +12,9 @@ set(SRC_DIR ${HAL_DIR}/Src)
 set(INCLUDE_DIRS 
     ${HAL_DIR}/Inc
     ${HAL_DIR}/Inc/legacy
-    # ${CMAKE_CURRENT_SOURCE_DIR}/core
-    ${CMAKE_CURRENT_SOURCE_DIR}/CMSIS_6/CMSIS/Core/Include
+    ${CMAKE_CURRENT_SOURCE_DIR}/conf
     ${CMAKE_CURRENT_SOURCE_DIR}/cmsis-device-l0/Include
+    ${CMAKE_CURRENT_SOURCE_DIR}/CMSIS_6/CMSIS/Core/Include
 )
 
 set(SOURCES
