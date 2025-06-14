@@ -38,14 +38,14 @@ jobs:
           make -j$(nproc)
           sudo make install
           cmake --version
-
+                    
       - name: Install ARM GCC Toolchain 10.3-2021.10
         run: |
           mkdir -p $HOME/Tools/gcc-arm
           cd $HOME/Tools/gcc-arm
           wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2 -O toolchain.tar.bz2
-          tar -xvf toolchain.tar.bz2
-          echo "$HOME/Tools/gcc-arm/gcc-arm-none-eabi-10.3-2021.10/bin" >> $GITHUB_PATH
+          tar -xjf toolchain.tar.bz2
+          export PATH="$HOME/Tools/gcc-arm/gcc-arm-none-eabi-10.3-2021.10/bin:$PATH"
           arm-none-eabi-gcc --version
 
       - name: Make build script executable
