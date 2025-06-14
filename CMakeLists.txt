@@ -2,9 +2,6 @@ cmake_minimum_required(VERSION 3.22)
 
 project(stm32l0xx_hal_st)
 
-set(CMAKE_C_COMPILER $ENV{HOME}/Tools/gcc-arm/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc)
-
-
 set(HAL_DIR stm32l0xx_hal_driver)
 set(SRC_DIR ${HAL_DIR}/Src)
 
