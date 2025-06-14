@@ -53,6 +53,8 @@ jobs:
 
       - name: Run build
         run: |
+          export PATH="$HOME/Tools/gcc-arm/gcc-arm-none-eabi-10.3-2021.10/bin:$PATH"
+          arm-none-eabi-gcc --version
           export CC=arm-none-eabi-gcc
           export CXX=arm-none-eabi-g++
           ./build.sh
