@@ -38,7 +38,7 @@ jobs:
           make -j$(nproc)
           sudo make install
           cmake --version
-                    
+
       - name: Install ARM GCC Toolchain 10.3-2021.10
         run: |
           mkdir -p $HOME/Tools/gcc-arm
@@ -52,7 +52,10 @@ jobs:
         run: chmod +x build.sh
 
       - name: Run build
-        run: ./build.sh
+        run: |
+          export CC=arm-none-eabi-gcc
+          export CXX=arm-none-eabi-g++
+          ./build.sh
 
       - name: Upload library artifact (.a)
         uses: actions/upload-artifact@v4
