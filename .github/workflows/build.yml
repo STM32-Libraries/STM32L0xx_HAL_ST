@@ -12,32 +12,32 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Install dependencies for building CMake
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            build-essential \
-            libssl-dev \
-            libcurl4-openssl-dev \
-            libexpat1-dev \
-            gettext \
-            unzip \
-            tar \
-            make \
-            g++ \
-            libtool
+      # - name: Install dependencies for building CMake
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y \
+      #       build-essential \
+      #       libssl-dev \
+      #       libcurl4-openssl-dev \
+      #       libexpat1-dev \
+      #       gettext \
+      #       unzip \
+      #       tar \
+      #       make \
+      #       g++ \
+      #       libtool
 
-      - name: Install CMake 3.26.4
-        run: |
-          mkdir -p $HOME/Tools/cmake
-          cd $HOME/Tools/cmake
-          wget https://github.com/Kitware/CMake/releases/download/v3.26.4/cmake-3.26.4.tar.gz
-          tar -xvf cmake-3.26.4.tar.gz
-          cd cmake-3.26.4
-          ./bootstrap
-          make -j$(nproc)
-          sudo make install
-          cmake --version
+      # - name: Install CMake 3.26.4
+      #   run: |
+      #     mkdir -p $HOME/Tools/cmake
+      #     cd $HOME/Tools/cmake
+      #     wget https://github.com/Kitware/CMake/releases/download/v3.26.4/cmake-3.26.4.tar.gz
+      #     tar -xvf cmake-3.26.4.tar.gz
+      #     cd cmake-3.26.4
+      #     ./bootstrap
+      #     make -j$(nproc)
+      #     sudo make install
+      #     cmake --version
 
       - name: Install ARM GCC Toolchain 10.3-2021.10
         run: |
@@ -53,8 +53,8 @@ jobs:
 
       - name: Run build
         run: |
+          ls -l
           export PATH="$HOME/Tools/gcc-arm/gcc-arm-none-eabi-10.3-2021.10/bin:$PATH"
-          arm-none-eabi-gcc --version
           export CC=arm-none-eabi-gcc
           export CXX=arm-none-eabi-g++
           ./build.sh
