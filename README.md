@@ -20,8 +20,6 @@ It is designed to simplify integration into modern bare-metal embedded projects 
 
 ---
 
-## 📁 Project Structure
-
 ## Clone repo
 ```
 git clone --recurse-submodules git@github.com:STM32-Libraries/STM32L0xx_HAL_ST.git 
@@ -30,10 +28,13 @@ git clone --recurse-submodules git@github.com:STM32-Libraries/STM32L0xx_HAL_ST.g
 ---
 
 ## ⚙️ Requirements
+Follow the instructions to setup the environment to build this project.
+https://marco-aguilar.gitbook.io/stm32l0-setup/dev-tools
 
 ---
 
 ## 🚀 Building the HAL Library
+Run build.sh script
 
 ---
 
