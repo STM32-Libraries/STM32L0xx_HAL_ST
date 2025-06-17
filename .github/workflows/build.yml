@@ -17,6 +17,9 @@ jobs:
       - name: Make build script executable
         run: chmod +x build.sh
 
+      - name: Call submodules
+        run: git submodule update --init --recursive
+
       - name: Run build
         run: |
           export CC=arm-none-eabi-gcc
